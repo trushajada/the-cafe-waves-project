@@ -21,18 +21,18 @@
 </head>
 
 <body>
-    
 
-    <!-- HEADER -->
-    <header class="py-4 shadow-md fixed top-0 left-0 w-full z-10">
+
+    <!-- HEADER & BANNEER  SECTION-->
+    <header class="py-4 shadow-md fixed top-0 left-0 w-full z-10 ">
         <div class="container mx-auto flex justify-between items-center px-4">
             <h1 class="text-3xl font-bold text-blue-400">The Waves Cafe</h1>
-            
+
             <!-- Hamburger Icon (mobile only) -->
             <button id="hamburger" class="lg:hidden text-3xl text-white focus:outline-none">
                 &#9776;
             </button>
-    
+
             <!-- Navigation Menu (desktop) -->
             <nav class="hidden lg:flex space-x-6 text-gray-300">
                 <ul class="flex space-x-6">
@@ -43,14 +43,16 @@
                     <li><a href="#contact" class="hover:text-white">Contact Us</a></li>
                 </ul>
             </nav>
-            
+
             <!-- Button (desktop) -->
-            <button class="hidden lg:block bg-[#5F9BCE] hover:bg-blue-600 text-white px-4 py-2 rounded">Book Now</button>
+            <button class="hidden lg:block bg-[#5F9BCE] hover:bg-blue-600 text-white px-4 py-2 rounded">Book
+                Now</button>
         </div>
         <img src="images/Line 2.png" alt="line" class="mt-4">
     </header>
     <!-- Mobile Navigation Menu -->
-    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 hidden flex justify-center items-center z-20">
+    <div id="mobile-menu"
+        class="lg:hidden fixed inset-0 bg-black bg-opacity-50 hidden flex justify-center items-center z-20">
         <div class="bg-white w-4/5 p-6 rounded-lg">
             <ul class="space-y-4">
                 <li><a href="Home.html" class="hover:text-blue-500">Home</a></li>
@@ -62,45 +64,99 @@
             </ul>
         </div>
     </div>
-    
+
     <!-- Banner Section with Title inside Container -->
-    <section id="home" class="relative bg-cover bg-center h-[60vh] sm:h-[80vh] md:h-[90vh] lg:h-[100vh] pt-20  linear-gradient(to right, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0) 90%)"
-    style="background-image: url('./images/banner.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center">
-        <!-- Title inside Container -->
-        <div class="container mx-auto px-4">
-            <h1 class="text-4xl font-bold text-white text-left">Gallery</h1>
-            <img src="./images/line-img.png" alt="img" class="mt-4 w-[120px]">
+    <section id="home"
+        class="relative bg-cover bg-center h-[60vh] sm:h-[80vh] md:h-[90vh] lg:h-[100vh] pt-20  linear-gradient(to right, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0) 90%) mb-5"
+        style="background-image: url('./images/banner.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-white text-left">Gallery</h1>
+                <img src="./images/line-img.png" alt="img" class="mt-4 w-[120px]">
+            </div>
         </div>
-    </div>
-    
-    <!-- Centered Image at the Bottom -->
-    <div class="absolute bottom-0 left-0 right-0 flex  pb-8">
-        <img src="images/Waves café.png" alt="Waves Café" class="h-[50px] md:h-[70px]">
-    </div>
+        <div class="absolute bottom-0 left-0 right-0 flex  pb-8">
+            <img src="images/Waves café.png" alt="Waves Café" class="h-[50px] md:h-[70px]">
+        </div>
+    </section>
+
+    <!-- HEADER & BANNEER  END SECTION -->
+
+    <!-- GALLERY SECTION - -->
+
+    <section id="Home" class="flex justify-center items-center py-8">
+    <main class="mx-auto p-5 max-w-[1440px] w-full">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-auto">
+            <!-- Left Column -->
+            <div class="flex flex-col gap-5  ml-auto">
+                <!-- Left Column Content -->
+                <img src="images/img-1.png" alt="Brunch Plate" class="w-[458px] rounded-lg shadow-md">
+                <img src="images/img-2.png" alt="Fruit Platter" class="w-[458px] rounded-lg shadow-md">
+                <img src="images/img-3.png" alt="Brunch Plate" class="w-[458px] h-[520px] rounded-lg shadow-md">
+            </div>
+        
+            <!-- Right Column -->
+            <div class="flex flex-col gap-5 relative">
+                <!-- Right Column Content -->
+                <img src="images/img-5.png" alt="Cafe Interior" class="w-full max-w-[958px] h-[699px] w-[968px]rounded-lg shadow-md mx-auto">
+                <div class="grid grid-cols-2 gap-5">
+                    <img src="images/img-6.png" alt="Brunch Plate" class="w-full max-w-[458px] rounded-lg shadow-md">
+                    <img src="images/img-8.png" alt="Fruit Platter" class="w-full max-w-[458px] rounded-lg shadow-md">
+                    <img src="images/img-10.png" alt="Brunch Plate" class="w-full max-w-[458px] rounded-lg shadow-md">
+                    <img src="images/img-9.png" alt="Fruit Platter" class="w-full max-w-[458px] rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </main>
 </section>
 
-
     
+    
+    
+      <!-- Footer -->
+      <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center">
+          <h3 class="text-lg font-semibold text-white">The Waves Cafe</h3>
+          <p class="mt-2">
+            There are many variations of passages of Lorem Ipsum suffered alteration in some form.
+          </p>
+          <div class="flex justify-center space-x-4 mt-4">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-google"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+          </div>
+          <nav class="mt-4 space-x-4">
+            <a href="#" class="hover:text-white">Help</a>
+            <a href="#" class="hover:text-white">Privacy Policy</a>
+            <a href="#" class="hover:text-white">Terms of Use</a>
+          </nav>
+          <p class="mt-4 text-sm">© 2024 The Waves Cafe. All Rights Reserved.</p>
+        </div>
+      </footer>
+    
+    
+
+
+
+
+
 
     <!-- Custom JavaScript -->
     <script src="src/js/javascript.js"></script>
 
     <script>
         $(document).ready(function () {
-            // Toggle Mobile Menu visibility when hamburger is clicked
             $('#hamburger').click(function () {
                 $('#mobile-menu').toggleClass('hidden');
             });
 
-            // Close mobile menu when clicked outside
             $(document).click(function (e) {
                 if (!$(e.target).closest('#mobile-menu, #hamburger').length) {
                     $('#mobile-menu').addClass('hidden');
                 }
             });
 
-            // Optional: To close the mobile menu when any item is clicked
             $('#mobile-menu a').click(function () {
                 $('#mobile-menu').addClass('hidden');
             });
