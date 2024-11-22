@@ -84,58 +84,70 @@
 
     <!-- GALLERY SECTION - -->
 
-    <section id="Home" class="flex justify-center items-center py-8">
-    <main class="mx-auto p-5 max-w-[1440px] w-full">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-auto">
+    <section id="home" class="py-10 p-4">
+        <main class="container mx-auto flex flex-col lg:flex-row gap-5">
             <!-- Left Column -->
-            <div class="flex flex-col gap-5  ml-auto">
-                <!-- Left Column Content -->
-                <img src="images/img-1.png" alt="Brunch Plate" class="w-[458px] rounded-lg shadow-md">
-                <img src="images/img-2.png" alt="Fruit Platter" class="w-[458px] rounded-lg shadow-md">
-                <img src="images/img-3.png" alt="Brunch Plate" class="w-[458px] h-[520px] rounded-lg shadow-md">
+            <div class="flex flex-col gap-5 lg:w-[35%]">
+                <img src="images/img-1.png" alt="" class="h-[200px] lg:h-[337px]  object-cover rounded-lg">
+                <img src="images/img-2.png" alt="" class="h-[200px] lg:h-[337px] object-cover rounded-lg">
+                <img src="images/img-3.png" alt="" class="h-[300px] lg:h-[720px] object-cover rounded-lg">
             </div>
-        
+
             <!-- Right Column -->
-            <div class="flex flex-col gap-5 relative">
-                <!-- Right Column Content -->
-                <img src="images/img-5.png" alt="Cafe Interior" class="w-full max-w-[958px] h-[699px] w-[968px]rounded-lg shadow-md mx-auto">
+            <div class="flex flex-col gap-5 lg:w-[65%]">
+                <div class="relative w-full">
+                    <img src="images/img-5.png" alt="Main Image" class="w-full object-cover opacity-70">
+                    
+                    <!-- Overlay with centered text -->
+                    <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-70">
+                        <div class="text-center ">
+                            <!-- <img src="images/Rectangle .png" alt="Rectangle Image" class="mx-auto"> -->
+                            <p class="text-white mt-4 "><img src="images/text.png" alt=""></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                <!-- Grid of smaller images -->
                 <div class="grid grid-cols-2 gap-5">
-                    <img src="images/img-6.png" alt="Brunch Plate" class="w-full max-w-[458px] rounded-lg shadow-md">
-                    <img src="images/img-8.png" alt="Fruit Platter" class="w-full max-w-[458px] rounded-lg shadow-md">
-                    <img src="images/img-10.png" alt="Brunch Plate" class="w-full max-w-[458px] rounded-lg shadow-md">
-                    <img src="images/img-9.png" alt="Fruit Platter" class="w-full max-w-[458px] rounded-lg shadow-md">
+                    <img src="images/img-6.png" alt="Smaller Image 1" class="h-auto object-cover rounded-lg">
+                    <img src="images/img-8.png" alt="Smaller Image 2" class="h-auto object-cover rounded-lg">
+                    <img src="images/img-10.png" alt="Smaller Image 3" class="h-auto object-cover rounded-lg">
+                    <img src="images/img-9.png" alt="Smaller Image 4" class="h-auto object-cover rounded-lg">
                 </div>
             </div>
-        </div>
-    </main>
-</section>
+            
+        </main>
+    </section>
 
-    
-    
-    
-      <!-- Footer -->
-      <footer class="bg-gray-900 text-gray-400 py-8">
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
         <div class="container mx-auto px-4 text-center">
-          <h3 class="text-lg font-semibold text-white">The Waves Cafe</h3>
-          <p class="mt-2">
-            There are many variations of passages of Lorem Ipsum suffered alteration in some form.
-          </p>
-          <div class="flex justify-center space-x-4 mt-4">
-            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-google"></i></a>
-            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-          </div>
-          <nav class="mt-4 space-x-4">
-            <a href="#" class="hover:text-white">Help</a>
-            <a href="#" class="hover:text-white">Privacy Policy</a>
-            <a href="#" class="hover:text-white">Terms of Use</a>
-          </nav>
-          <p class="mt-4 text-sm">© 2024 The Waves Cafe. All Rights Reserved.</p>
+            <h2 class="text-2xl font-semibold  text-blue-400">The Waves Cafe</h2>
+            <p class="mt-2">
+                There are many  to variations of passages of Lorem Ipsum  suffered alteration inrandomisedchunks as, making this the first.  
+            </p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-google"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+            </div>
+            <nav class="mt-4 space-x-4">
+                <a href="#" class="hover:text-white">Help</a>
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Use</a>
+            </nav>
+            <p class="mt-4 text-sm">© 2024 The Waves Cafe. All Rights Reserved.</p>
         </div>
-      </footer>
-    
-    
+    </footer>
+
+
 
 
 
