@@ -24,26 +24,48 @@
     <style>
         body {
             font-family: 'Playfair Display', serif;
-           
         }
     </style>
 
     <!-- HEADER -->
-    <header class="py-4 shadow-md fixed top-0 left-0 w-full z-10 sm:h-[80vh] md:h-[90vh] lg:h-[100vh]">
+    <header class="py-4 shadow-md fixed top-0 left-0 w-full z-10 ">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <h1 class="text-2xl font-bold text-blue-400">The Waves Cafe</h1>
-            <nav>
-                <ul class="flex space-x-6 text-gray-300">
+            <h1 class="text-3xl font-bold text-blue-400">The Waves Cafe</h1>
+            
+            <!-- Hamburger Icon (mobile only) -->
+            <button id="hamburger" class="lg:hidden text-3xl text-white focus:outline-none">
+                &#9776;
+            </button>
+
+            <!-- Navigation Menu (desktop) -->
+            <nav class="hidden lg:flex space-x-6 text-gray-300">
+                <ul class="flex space-x-6">
                     <li><a href="Home.html" class="hover:text-white">Home</a></li>
-                    <li><a href="about" class="hover:text-white">About Us</a></li>
-                    <li><a href="blog" class="hover:text-white">Blog</a></li>
+                    <li><a href="#about" class="hover:text-white">About Us</a></li>
+                    <li><a href="#blog" class="hover:text-white">Blog</a></li>
                     <li><a href="Gallery.html" class="hover:text-white">Gallery</a></li>
-                    <li><a href="contact" class="hover:text-white">Contact Us</a></li>
+                    <li><a href="#contact" class="hover:text-white">Contact Us</a></li>
                 </ul>
             </nav>
-            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Book Now</button>
+            
+            <!-- Button (desktop) -->
+            <button class="hidden lg:block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Book Now</button>
         </div>
     </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 hidden flex justify-center items-center z-20">
+        <div class="bg-white w-4/5 p-6 rounded-lg">
+            <ul class="space-y-4">
+                <li><a href="Home.html" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-500">About Us</a></li>
+                <li><a href="#blog" class="hover:text-blue-500">Blog</a></li>
+                <li><a href="Gallery.html" class="hover:text-blue-500">Gallery</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact Us</a></li>
+                <li><button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Book Now</button></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Banner Section -->
     <section id="home" class="relative bg-cover bg-center h-[60vh] sm:h-[80vh] md:h-[90vh] lg:h-[100vh] pt-20"
@@ -57,7 +79,24 @@
     <script src="src/js/javascript.js"></script>
 
     <script>
-        
+        $(document).ready(function () {
+            // Toggle Mobile Menu visibility when hamburger is clicked
+            $('#hamburger').click(function () {
+                $('#mobile-menu').toggleClass('hidden');
+            });
+
+            // Close mobile menu when clicked outside
+            $(document).click(function (e) {
+                if (!$(e.target).closest('#mobile-menu, #hamburger').length) {
+                    $('#mobile-menu').addClass('hidden');
+                }
+            });
+
+            // Optional: To close the mobile menu when any item is clicked
+            $('#mobile-menu a').click(function () {
+                $('#mobile-menu').addClass('hidden');
+            });
+        });
     </script>
 
 </body>
