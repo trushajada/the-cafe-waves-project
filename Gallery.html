@@ -85,17 +85,17 @@
     <!-- GALLERY SECTION - -->
 
     <section id="home" class="py-10 px-4 relative">
-        <img src="images/right-img.png" alt="Right Image" class="absolute right-0 top-0 w-[400px] h-auto lg:block ">
+        <img src="images/right-img.png" alt="Right Image" class="absolute right-0 top-0 w-[400px] h-auto lg:block hidden">
     
         <main class="container mx-auto flex flex-col lg:flex-row gap-5">
             <!-- Left Column -->
-            <div class="flex flex-col gap-5 lg:w-[35%]">
-                <img src="images/img-1.png" alt="Image 1" data-large="images/img-1-large.png" class="image h-[200px] lg:h-[337px] object-cover rounded-lg cursor-pointer">
-                <img src="images/img-2.png" alt="Image 2" data-large="images/img-2-large.png" class="image h-[200px] lg:h-[337px] object-cover rounded-lg cursor-pointer">
-                <img src="images/img-3.png" alt="Image 3" data-large="images/img-3-large.png" class="image h-[300px] lg:h-[720px] object-cover rounded-lg cursor-pointer">
+            <div class="flex flex-col gap-5   md:grid-cols-1 sm:grid-cols-2">
+                <img src="images/img-1.png" alt="Image 1" data-large="images/img-1-large.png" class="image   object-cover rounded-lg cursor-pointer">
+                <img src="images/img-2.png" alt="Image 2" data-large="images/img-2-large.png" class="image  object-cover rounded-lg cursor-pointer">
+                <img src="images/img-3.png" alt="Image 3" data-large="images/img-3-large.png" class="image  object-cover rounded-lg cursor-pointer">
             </div>
-            <div class="flex flex-col gap-5 lg:w-[65%]">
-                <div class="relative w-full">
+            <div class="flex flex-col gap-5 ">
+                <div class="relative w-full h-">
                     <img src="images/img-5.png" alt="Main Image" data-large="images/img-5-large.png" class="image w-full object-cover opacity-70 cursor-pointer">
                     <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-70">
                         <div class="text-center">
@@ -103,15 +103,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-5">
-                    <img src="images/img-6.png" alt="Smaller Image 1" data-large="images/img-6-large.png" class="image h-auto object-cover rounded-lg cursor-pointer">
+                <div class="grid grid-cols-2 gap-5 w-full">
+                    <img src="images/img-6.png" alt="Smaller Image 1" data-large="images/img-6-large.png" class="image h-auto  object-cover rounded-lg cursor-pointer">
                     <img src="images/img-8.png" alt="Smaller Image 2" data-large="images/img-8-large.png" class="image h-auto object-cover rounded-lg cursor-pointer">
                     <img src="images/img-10.png" alt="Smaller Image 3" data-large="images/img-10-large.png" class="image h-auto object-cover rounded-lg cursor-pointer">
                     <img src="images/img-9.png" alt="Smaller Image 4" data-large="images/img-9-large.png" class="image h-auto object-cover rounded-lg cursor-pointer">
                 </div>
             </div>
         </main>
-        <img src="images/left-side.png" alt="Left Image" class="absolute left-0 bottom-40 w-[200px] h-[300px] lg:block object-cover" />
+        <img src="images/left-side.png" alt="Left Image" class="absolute left-0 bottom-40 w-[200px] h-[300px] lg:block object-cover lg:block hidden" />
     </section>
     
     <!-- GALLERY SECTION END- -->
@@ -149,7 +149,7 @@
                     <p class="text-gray-400  w-full text-center sm:text-left sm:w-auto">
                         © 2024 The Waves Cafe. All Rights Reserved.
                     </p>
-                    <div class="space-x-4 sm:mt-0 text-gray-400 text-center font-sans">
+                    <div class="space-x-4 sm:mt-0 text-gray-400 text-center font-sans lg:block hidden">
                         <a href="#" class="hover:text-white">Help</a>
                         <a href="#" class="hover:text-white">Privacy Policy</a>
                         <a href="#" class="hover:text-white">Terms of Use</a>

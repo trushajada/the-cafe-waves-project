@@ -15,3 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// About page javascript
+
+document.querySelectorAll('.text-gray-400').forEach(paragraph => {
+    paragraph.addEventListener('mouseover', () => {
+        paragraph.classList.add('text-white');
+    });
+    paragraph.addEventListener('mouseout', () => {
+        paragraph.classList.remove('text-white');
+    });
+});
+
+
+      
