@@ -75,3 +75,18 @@ function toggleParagraph(event) {
         toggleButton.textContent = 'See more';
     }
 }
+
+// blog page 2 
+
+const newPosts = [
+    {
+      date: 'July 10, 2021',
+      image: 'images/search-5.png',
+      description: 'New dynamically added post example 1.',
+    },
+    {
+      date: 'August 14, 2021',
+      image: 'images/search-6.png',
+      description: 'New dynamically added post example 2.',
+    },
+  ];

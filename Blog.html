@@ -408,28 +408,6 @@
             });
         });
 
-        $(document).ready(function () {
-            $('#contactForm').on('submit', function (e) {
-                e.preventDefault();
-                let valid = true;
-                $('#contactForm input, #contactForm textarea').each(function () {
-                    if (!$(this).val()) {
-                        valid = false;
-                        $(this).addClass('ring-2 ring-red-500');
-                    } else {
-                        $(this).removeClass('ring-2 ring-red-500');
-                    }
-                });
-
-                if (valid) {
-                    alert('Form Submitted Successfully!');
-                    $('#contactForm')[0].reset();
-                } else {
-                    alert('Please fill in all required fields.');
-                }
-            });
-        })
-
 
 
     </script>
