@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+
+
+
 // About page javascript
 
 document.querySelectorAll('.text-gray-400').forEach(paragraph => {
@@ -28,23 +32,24 @@ document.querySelectorAll('.text-gray-400').forEach(paragraph => {
 
  
 // contact page 
+  
+$(document).ready(function () {
+    $('#contactForm').submit(function (event) {
+      event.preventDefault(); 
+      const name = $('#name').val();
+      const email = $('#email').val();
+      const number = $('#number').val();
+      const address = $('#address').val();
+      const message = $('#message').val();
 
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-  
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const number = document.getElementById("number").value.trim();
-    const address = document.getElementById("address").value.trim();
-    const message = document.getElementById("message").value.trim();
-  
-    if (!name || !email || !number || !address || !message) {
-      alert("Please fill out all fields."); 
-      return; 
-    }
-  
-   
-    alert("Form submitted successfully!");
-    document.getElementById("contactForm").reset(); 
-  });
-  
+      if (name === "" || email === "" || number === "" || address === "" || message === "") {
+        alert("Please fill in all fields.");
+        return;
+      }
+      alert("Form submitted successfully!");
+
+      $('#contactForm')[0].reset();
+
+      $('#submitBtn').text('Submitted').prop('disabled', true);
+    });
+})
