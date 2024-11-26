@@ -26,5 +26,25 @@ document.querySelectorAll('.text-gray-400').forEach(paragraph => {
     });
 });
 
+ 
+// contact page 
 
-      
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+  
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const number = document.getElementById("number").value.trim();
+    const address = document.getElementById("address").value.trim();
+    const message = document.getElementById("message").value.trim();
+  
+    if (!name || !email || !number || !address || !message) {
+      alert("Please fill out all fields."); 
+      return; 
+    }
+  
+   
+    alert("Form submitted successfully!");
+    document.getElementById("contactForm").reset(); 
+  });
+  

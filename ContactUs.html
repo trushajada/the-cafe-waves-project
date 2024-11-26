@@ -82,6 +82,101 @@
 
     <!-- HEADER & BANNEER  END SECTION -->
 
+    <!-- FROM SECTION START  -->
+
+    <section class="py-12 flex items-center justify-center h-screen ">
+        <img src="images/contact-img.png" alt="Left Image"
+        class="absolute left-0 top-90 w-[210px] lg:block hidden " />
+        <div class=" container mx-auto px-6 py-8 text-white rounded-lg shadow-lg shadow-md border border-[#5F9BCE] ">
+           
+            <section class=" flex items-center justify-center ">
+                <div class="max-w-2xl w-full px-6 py-8 text-white rounded-lg shadow-lg ">
+                  <h2 class="text-3xl font-bold text-center mb-4">
+                    <span class="text-[#5F9BCE]">Get In</span> Touch
+                  </h2>
+                  <div class="flex justify-center items-center mb-5">
+                    <img src="images/line-img.png" alt="line" class="w-32">
+                  </div>
+                  <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Name -->
+                    <div>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                        class="w-full px-4 py-2 text-white rounded-lg border border-gray-600"
+                        required
+                        style="background-color: rgb(29, 27, 27);"
+                      />
+                    </div>
+                    <!-- Email -->
+                    <div>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        class="w-full px-4 py-2 text-white rounded-lg border border-gray-600"
+                        required
+                        style="background-color: rgb(29, 27, 27);"
+                      />
+                    </div>
+                    <!-- Number -->
+                    <div>
+                      <input
+                        type="tel"
+                        id="number"
+                        name="number"
+                        placeholder="Phone Number"
+                        class="w-full px-4 py-2 text-white rounded-lg border border-gray-600"
+                        required
+                        style="background-color: rgb(29, 27, 27);"
+                      />
+                    </div>
+                    <!-- Address -->
+                    <div>
+                      <input
+                        type="text"
+                        id="address"
+                        name="address"
+                        placeholder="Address"
+                        class="w-full px-4 py-2 text-white rounded-lg border border-gray-600"
+                        required
+                        style="background-color: rgb(29, 27, 27);"
+                      />
+                    </div>
+                    <!-- Message -->
+                    <div class="md:col-span-2">
+                      <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Your Message"
+                        rows="4"
+                        class="w-full px-4 py-2 text-white rounded-lg border border-gray-600"
+                        required
+                        style="background-color: rgb(29, 27, 27);"
+                      ></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="md:col-span-2 text-center">
+                      <button
+                        type="submit"
+                        id="submitBtn"
+                        class="px-6 py-2 bg-blue-500 rounded-lg text-white hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 border border-[#5F9BCE]"
+                        style="background-color: rgb(29, 27, 27);"
+                      >
+                        Submit →
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </section>
+              
+        </div>
+      </section>
+      
+      
     
 
     <!-- FOOTER SECTION START  -->
@@ -129,6 +224,8 @@
             class="absolute top-1/2 right-0 transform -translate-y-1/2 w-[100px] h-auto ">
     </footer>
 
+
+    
     <!-- FOOTER SECTION END  -->
 
     <!-- J-QUERY LOGIC ADDD AND CUSTOM JAVASCRIPT LINK -->
@@ -153,7 +250,35 @@
                 $('#mobile-menu').addClass('hidden');
             });
         });
+
+        $(document).ready(function () {
+      $('#contactForm').on('submit', function (e) {
+        e.preventDefault();
+        let valid = true;
+        $('#contactForm input, #contactForm textarea').each(function () {
+          if (!$(this).val()) {
+            valid = false;
+            $(this).addClass('ring-2 ring-red-500'); 
+          } else {
+            $(this).removeClass('ring-2 ring-red-500'); 
+          }
+        });
+
+        if (valid) {
+          alert('Form Submitted Successfully!');
+          $('#contactForm')[0].reset(); 
+        } else {
+          alert('Please fill in all required fields.');
+        }
+      });
+    })
     </script>
 </body>
 
 </html>
+
+
+
+
+
+
