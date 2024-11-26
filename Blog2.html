@@ -233,55 +233,139 @@
 
     <!-- products section start  -->
 
-    <main>
-        <section class=" p-4 md:p-6 h-screen">
-            <h4 class="text-center text-xl font-semibold">JavaScript | jQuery Custom Slider</h4>
-            <p class="text-center text-gray-500">Slide items one by one with an infinite loop. Responsive for all screens.</p>
-            <div class="container mx-auto relative">
-                <!-- Slider -->
-                <div class="slider flex items-center overflow-hidden relative">
-                    <div class="slider-wrap flex absolute">
-                        <!-- Slide Card -->
-                        <div class="slide-card relative bg-white shadow-md mx-2 rounded-md overflow-hidden">
-                            <a href="#" class="no-underline">
-                                <img src="images/slider-1.png" alt="slide" class="w-full">
+    <section class=" px-2">
+        <div class="container mx-auto">
+            <!-- Header Section -->
+            <div class="p-4 md:p-8">
+                <h4 class="text-left font-semibold mb-2 text-3xl text-[#5F9BCE]">
+                    Similar Product
+                </h4>
+                <img src="./images/line-img.png" alt="Line Separator" class="mt-4 w-[160px]">
+                <p class="text-gray-400 mt-3 font-sans">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="relative">
+                <div class="slider flex items-center justify-start overflow-hidden">
+                    <div class="slider-wrap flex items-center">
+                        <div class="slide-card shadow-md mx-2 relative w-[400px]">
+                            <a href="#" class="block">
+                                <img src="images/slider-1.png" alt="Slide 1" class="w-full">
                                 <div class="p-4">
-                                    <p class="text-gray-800 text-lg font-semibold">jQuery | JS - 1</p>
-                                    <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <p class="text-gray-400 text-xs mt-2">18 Nov, 2022</p>
+                                    <p
+                                        class="text-white font-sans font-medium mb-2 text-md flex justify-between items-center">
+                                        Fresh Lime
+                                        <span class="text-[#5F9BCE]">$38</span>
+                                    </p>
+                                    <p class="text-gray-400 text-sm font-sans">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam
+                                        ullam natus. Repudiandae.
+                                    </p>
+                                    <p class="text-gray-500 text-xs mt-4">18 Nov, 2022</p>
                                 </div>
                             </a>
                         </div>
-                        <!-- Repeat similar cards -->
-                        <div class="slide-card relative  shadow-md mx-2 rounded-md overflow-hidden">
-                            <a href="#" class="no-underline">
-                                <img src="images/slider-2.png" alt="slide" class="w-full">
+                        <div class="slide-card shadow-md mx-2 relative w-[400px]">
+                            <a href="#" class="block">
+                                <img src="images/slider-2.png" alt="Slide 1" class="w-full">
                                 <div class="p-4">
-                                    <p class="text-gray-800 text-lg font-semibold">jQuery | JS - 2</p>
-                                    <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <p class="text-gray-400 text-xs mt-2">18 Nov, 2022</p>
+                                    <p
+                                        class="text-white font-sans font-medium mb-2 text-md flex justify-between items-center">
+                                        Chocolate Muffin
+                                        <span class="text-[#5F9BCE]">$38</span>
+                                    </p>
+                                    <p class="text-gray-400 text-sm font-sans">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam
+                                        ullam natus. Repudiandae.
+                                    </p>
+                                    <p class="text-gray-500 text-xs mt-4">18 Nov, 2022</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide-card shadow-md mx-2 relative w-[400px]">
+                            <a href="#" class="block">
+                                <img src="images/slider-3.png" alt="Slide 1" class="w-full">
+                                <div class="p-4">
+                                    <p
+                                        class="text-white font-sans font-medium mb-2 text-md flex justify-between items-center">
+                                        Burger
+                                        <span class="text-[#5F9BCE]">$38</span>
+                                    </p>
+                                    <p class="text-gray-400 text-sm font-sans">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam
+                                        ullam natus. Repudiandae.
+                                    </p>
+                                    <p class="text-gray-500 text-xs mt-4">18 Nov, 2022</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide-card shadow-md mx-2 relative w-[400px] ">
+                            <a href="#" class="block">
+                                <img src="images/slider-2.png" alt="Slide 1" class="w-full ">
+                                <div class="p-4">
+                                    <p
+                                        class="text-white font-sans font-medium mb-2 text-md flex justify-between items-center">
+                                        Chocolate Muffin
+                                        <span class="text-[#5F9BCE]">$38</span>
+                                    </p>
+                                    <p class="text-gray-400 text-sm font-sans">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam
+                                        ullam natus. Repudiandae.
+                                    </p>
+                                    <p class="text-gray-500 text-xs mt-4">18 Nov, 2022</p>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                <a href="#" id="previous-arrow" class="absolute top-1/2 left-4 transform -translate-y-1/2 z-10 text-gray-600">
-                    <div class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-gray-200">
-                        <i class="fa fa-angle-left"></i>
-                    </div>
-                </a>
-                <a href="#" id="next-arrow" class="absolute top-1/2 right-4 transform -translate-y-1/2 z-10 text-gray-600">
-                    <div class="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-md hover:bg-gray-200">
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </a>
+
+                <button id="previous-arrow"
+                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md text-gray-800 hover:text-gray-600">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </button>
+                <button id="next-arrow"
+                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md text-gray-800 hover:text-gray-600">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
             </div>
-        </section>
-    </main>
-    
-   
+        </div>
+    </section>
 
     <!-- products section end  -->
+
+    <!-- Popular food section start -->
+
+    <section class=" flex items-center justify-center py-12">
+        <div class=" container mx-auto px-6 py-8 text-white ">
+    
+          <div class=" flex items-center justify-center ">
+            <div class="max-w-2xl w-full px-6 py-8 text-white ">
+              <h2 class="text-3xl font-bold text-center mb-4">
+                <span class="text-[#5F9BCE]">Most Popular</span> 
+              </h2>
+              <div class="flex justify-center items-center mb-5">
+                <img src="images/line-img.png" alt="line" class="w-32">
+              </div>
+              <p class="text-sm font-sans text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+             
+            </div>
+        </div>
+        <div class="relative w-full h-full">
+            <img src="images/popular.png" alt="Main Image" data-large="images/img-5-large.png" class="image w-full object-cover cursor-pointer">
+            <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+                <div class="text-center">
+                    <p class="text-white mt-4">
+                        <img src="images/Vanilla latte.png" alt="Overlay Text">
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+      </section>
+
+    <!-- Popular food section end -->
+
 
     <!-- FOOTER SECTION START  -->
     <footer class=" text-gray-400 py-3 relative" style="background-color: rgb(34, 48, 54);">
@@ -385,33 +469,29 @@
 
 
         $(document).ready(function () {
-            let cardWidth = $(".slide-card").outerWidth(true); // Include margin in width
-            const sliderWrap = $(".slider-wrap");
-    
-            // Move to the next slide
-            $("#next-arrow").click(function (e) {
-                e.preventDefault();
-                sliderWrap.animate({ left: -cardWidth }, 300, function () {
-                    sliderWrap.append($(".slide-card:first-child"));
-                    sliderWrap.css("left", 0); // Reset position
+            const cardWidth = $(".slide-card").outerWidth(true);
+
+            // Next Arrow
+            $("#next-arrow").click(function () {
+                const firstChild = $(".slider-wrap .slide-card:first-child");
+                $(".slider-wrap").animate({ left: -cardWidth }, 300, function () {
+                    $(".slider-wrap").append(firstChild);
+                    $(".slider-wrap").css({ left: 0 });
                 });
             });
-    
-            // Move to the previous slide
-            $("#previous-arrow").click(function (e) {
-                e.preventDefault();
-                sliderWrap.prepend($(".slide-card:last-child"));
-                sliderWrap.css("left", -cardWidth); // Set position before animation
-                sliderWrap.animate({ left: 0 }, 300);
-            });
-    
-            // Update card width on window resize
-            $(window).resize(function () {
-                cardWidth = $(".slide-card").outerWidth(true); // Update width dynamically
+
+            // Previous Arrow
+            $("#previous-arrow").click(function () {
+                const lastChild = $(".slider-wrap .slide-card:last-child");
+                $(".slider-wrap").css({ left: -cardWidth });
+                $(".slider-wrap").prepend(lastChild);
+                $(".slider-wrap").animate({ left: 0 }, 300);
             });
         });
-    
-</script>
+
+
+
+    </script>
 </body>
 
 </html>
