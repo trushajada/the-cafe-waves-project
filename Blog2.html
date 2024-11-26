@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Waves Cafe</title>
+    <title>The Waves cafe</title>
 
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,35 +22,39 @@
     <!-- font-awesome link  -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
 </head>
 
 <body>
-
     <!-- HEADER & BANNEER  SECTION-->
     <header id="main-header" class="py-4 shadow-md fixed top-0 left-0 w-full z-10 ">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <h1 class="text-3xl font-bold text-blue-400">The Waves Cafe</h1>
-
-            <!-- Hamburger Icon (mobile only) -->
+            <h1 class="text-3xl font-bold text-[#5F9BCE]">The Waves Cafe</h1>
             <button id="hamburger" class="lg:hidden text-3xl text-white focus:outline-none">
                 &#9776;
             </button>
-
-            <nav class="hidden lg:flex space-x-6 text-gray-300">
+            <nav class="hidden lg:flex space-x-6 text-gray-300 relative">
                 <ul class="flex space-x-8">
                     <li><a href="Home.html" class="text-white">Home</a></li>
                     <li><a href="About.html" class="text-white">About Us</a></li>
                     <div class="dropdown inline-block relative">
                         <button class=" flex">
-                          <span class="mr-3">blog</span>
-                          <svg class="fill-current h-4 w-4 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                            <span class="mr-3 text-blue-400 border-blue-400 border-b-2">blog</span>
+                            <svg class="fill-current h-4 w-4 mt-1 text-blue-400 border-blue-400 "
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
                         </button>
                         <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 w-32">
-                          <li class=""><a class="rounded-t bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white" href="Blog.html">Blog 1</a></li>
-                          <li class=""><a class="bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white" href="Blog2.html">Blog 2</a></li>
+                            <li class=""><a
+                                    class="rounded-t bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white"
+                                    href="Blog.html">Blog 1</a></li>
+                            <li class=""><a
+                                    class="bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white"
+                                    href="Blog2.html">Blog 2</a></li>
                         </ul>
-                      </div>
-                    <li><a href="Gallery.html" class="text-blue-400  border-blue-400 border-b-2">Gallery</a></li>
+                    </div>
+                    <li><a href="Gallery.html" class="text-white">Gallery</a></li>
                     <li><a href="ContactUs.html" class="text-white">Contact Us</a></li>
                 </ul>
             </nav>
@@ -59,29 +63,35 @@
         <img src="images/Line 2.png" alt="" class="mt-3">
     </header>
 
-    <!-- Mobile Navigation Menu -->
     <div id="mobile-menu"
         class="lg:hidden fixed inset-0 bg-black bg-opacity-50 hidden flex justify-center items-center z-20">
         <div class="bg-white w-4/5 p-6 rounded-lg">
             <ul class="space-y-4">
                 <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html" >About Us</a></li>
+                <li><a href="About.html">About Us</a></li>
                 <div class="dropdown inline-block relative">
                     <button class=" flex">
-                      <span class="mr-3">blog</span>
-                      <svg class="fill-current h-4 w-4 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                        <span class="mr-3">blog</span>
+                        <svg class="fill-current h-4 w-4 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
                     </button>
                     <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 w-32">
-                      <li class=""><a class="rounded-t bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white" href="Blog.html">Blog 1</a></li>
-                      <li class=""><a class="bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white" href="Blog2.html">Blog 2</a></li>
+                        <li class=""><a
+                                class="rounded-t bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white"
+                                href="Blog.html">Blog 1</a></li>
+                        <li class=""><a
+                                class="bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white"
+                                href="Blog2.html">Blog 2</a></li>
                     </ul>
-                  </div>
-                <li><a href="Gallery.html" class="text-blue-400 hover:border-blue-400">Gallery</a></li>
+                </div>
+                <li><a href="Gallery.html">Gallery</a></li>
                 <li><a href="ContactUs.html">Contact Us</a></li>
                 <li><button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Book Now</button></li>
             </ul>
         </div>
     </div>
+
 
     <!-- Banner Section with Title inside Container -->
     <section id="home"
@@ -89,7 +99,7 @@
         style="background-image: url('./images/banner.png');">
         <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center">
             <div class="container mx-auto px-4">
-                <h1 class="text-4xl font-bold text-white text-left">Gallery</h1>
+                <h1 class="text-4xl font-bold text-white text-left">Blog</h1>
                 <img src="./images/line-img.png" alt="img" class="mt-4 w-[120px]">
             </div>
         </div>
@@ -100,43 +110,10 @@
 
     <!-- HEADER & BANNEER  END SECTION -->
 
-    <!-- GALLERY SECTION - -->
-
-    <section id="home" class="py-10 px-4 relative">
-        <img src="images/right-img.png" alt="Right Image" class="absolute right-0 top-0 w-[400px] h-auto lg:block hidden">
-    
-        <main class="container mx-auto flex flex-col lg:flex-row gap-5">
-            <!-- Left Column -->
-            <div class="flex flex-col gap-5   md:grid-cols-1 sm:grid-cols-2">
-                <img src="images/img-1.png" alt="Image 1" data-large="images/img-1-large.png" class="image   object-cover rounded-lg cursor-pointer">
-                <img src="images/img-2.png" alt="Image 2" data-large="images/img-2-large.png" class="image  object-cover rounded-lg cursor-pointer">
-                <img src="images/img-3.png" alt="Image 3" data-large="images/img-3-large.png" class="image  object-cover rounded-lg cursor-pointer">
-            </div>
-            <div class="flex flex-col gap-5 ">
-                <div class="relative w-full h-">
-                    <img src="images/img-5.png" alt="Main Image" data-large="images/img-5-large.png" class="image w-full object-cover opacity-70 cursor-pointer">
-                    <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-70">
-                        <div class="text-center">
-                            <p class="text-white mt-4"><img src="images/text.png" alt="Overlay Text"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-2 gap-5 w-full">
-                    <img src="images/img-6.png" alt="Smaller Image 1" data-large="images/img-6-large.png" class="image h-auto  object-cover rounded-lg cursor-pointer">
-                    <img src="images/img-8.png" alt="Smaller Image 2" data-large="images/img-8-large.png" class="image h-auto object-cover rounded-lg cursor-pointer">
-                    <img src="images/img-10.png" alt="Smaller Image 3" data-large="images/img-10-large.png" class="image h-auto object-cover rounded-lg cursor-pointer">
-                    <img src="images/img-9.png" alt="Smaller Image 4" data-large="images/img-9-large.png" class="image h-auto object-cover rounded-lg cursor-pointer">
-                </div>
-            </div>
-        </main>
-        <img src="images/left-side.png" alt="Left Image" class="absolute left-0 bottom-40 w-[200px] h-[300px] lg:block object-cover lg:block hidden" />
-    </section>
-    
-    <!-- GALLERY SECTION END- -->
 
 
-    <!-- Footer SECTION-->
 
+    <!-- FOOTER SECTION START  -->
     <footer class=" text-gray-400 py-3 relative" style="background-color: rgb(34, 48, 54);">
         <div class="container mx-auto px-4 text-center lg:text-center mt-5">
             <h2 class="text-2xl font-semibold text-[#5F9BCE]">The Waves Cafe</h2>
@@ -180,32 +157,16 @@
             class="absolute top-1/2 right-0 transform -translate-y-1/2 w-[100px] h-auto ">
     </footer>
 
-    <!-- Footer SECTION END-->
 
 
-     <!-- Custom JavaScript -->
+    <!-- FOOTER SECTION END  -->
+
+
+
+    <!-- J-QUERY LOGIC ADDD AND CUSTOM JAVASCRIPT LINK -->
+
     <script src="src/js/javascript.js"></script>
 
-
-    <!-- J-QUERY LOGIC ADDD  -->
-
-    <script>
-        $(document).ready(function () {
-            $('#hamburger').click(function () {
-                $('#mobile-menu').toggleClass('hidden');
-            });
-
-            $(document).click(function (e) {
-                if (!$(e.target).closest('#mobile-menu, #hamburger').length) {
-                    $('#mobile-menu').addClass('hidden');
-                }
-            });
-
-            $('#mobile-menu a').click(function () {
-                $('#mobile-menu').addClass('hidden');
-            });
-        });
-    </script>
 
 </body>
 
