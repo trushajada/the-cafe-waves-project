@@ -53,3 +53,25 @@ $(document).ready(function () {
       $('#submitBtn').text('Submitted').prop('disabled', true);
     });
 })
+
+// Blog page 
+
+function toggleParagraph(event) {
+    event.preventDefault();
+    const parentDiv = event.target.closest('.bg-gray-800');
+
+    const shortParagraph = parentDiv.querySelector('.short-paragraph');
+    const fullParagraph = parentDiv.querySelector('.full-paragraph');
+    const toggleButton = parentDiv.querySelector('.toggle-button');
+
+
+    if (fullParagraph.classList.contains('hidden')) {
+        shortParagraph.classList.add('hidden');
+        fullParagraph.classList.remove('hidden');
+        toggleButton.textContent = 'See less';
+    } else {
+        fullParagraph.classList.add('hidden');
+        shortParagraph.classList.remove('hidden');
+        toggleButton.textContent = 'See more';
+    }
+}
