@@ -26,27 +26,27 @@ document.querySelectorAll('.text-gray-400').forEach(paragraph => {
     });
 });
 
- 
+
 // contact page 
-  
+
 $(document).ready(function () {
     $('#contactForm').submit(function (event) {
-      event.preventDefault(); 
-      const name = $('#name').val();
-      const email = $('#email').val();
-      const number = $('#number').val();
-      const address = $('#address').val();
-      const message = $('#message').val();
+        event.preventDefault();
+        const name = $('#name').val();
+        const email = $('#email').val();
+        const number = $('#number').val();
+        const address = $('#address').val();
+        const message = $('#message').val();
 
-      if (name === "" || email === "" || number === "" || address === "" || message === "") {
-        alert("Please fill in all fields.");
-        return;
-      }
-      alert("Form submitted successfully!");
+        if (name === "" || email === "" || number === "" || address === "" || message === "") {
+            alert("Please fill in all fields.");
+            return;
+        }
+        alert("Form submitted successfully!");
 
-      $('#contactForm')[0].reset();
+        $('#contactForm')[0].reset();
 
-      $('#submitBtn').text('Submitted').prop('disabled', true);
+        $('#submitBtn').text('Submitted').prop('disabled', true);
     });
 })
 
@@ -76,13 +76,28 @@ function toggleParagraph(event) {
 
 const newPosts = [
     {
-      date: 'July 10, 2021',
-      image: 'images/search-5.png',
-      description: 'New dynamically added post example 1.',
+        date: 'July 10, 2021',
+        image: 'images/search-5.png',
+        description: 'New dynamically added post example 1.',
     },
     {
-      date: 'August 14, 2021',
-      image: 'images/search-6.png',
-      description: 'New dynamically added post example 2.',
+        date: 'August 14, 2021',
+        image: 'images/search-6.png',
+        description: 'New dynamically added post example 2.',
     },
-  ];
+];
+
+// gallery
+
+document.getElementById("viewMore").addEventListener("click", () => {
+    const newImages = `
+      <div class=" container mx-auto overflow-hidden rounded-lg h-[300px] flex gap-4">
+        <img class="w-full h-full object-cover hover:scale-105 transition-transform" src="images/g-1.png" alt="Dish 7">
+        <img class="w-full h-full object-cover hover:scale-105 transition-transform" src="images/g-2.png" alt="Dish 7">
+        <img class="w-full h-full object-cover hover:scale-105 transition-transform" src="images/g-3.png" alt="Dish 7">
+
+      </div>`;
+    document.getElementById("gallery").innerHTML += newImages;
+});
+
+
