@@ -15,10 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
-
-
-
 // About page javascript
 
 document.querySelectorAll('.text-gray-400').forEach(paragraph => {
