@@ -98,7 +98,7 @@
 
     <!-- Banner Section with Title inside Container -->
     <section id="home" class="relative bg-cover bg-center h-[100vh] sm:h-[100vh] md:h-[100vh] lg:h-[100vh] pt-20  mb-5"
-        style="background-image: url('./images/home-banner.png');  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('./images/home-banner.png');
+        style="background-image: url('./images/home-banner.png');  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1.7)), url('./images/home-banner.png');
 ">
         <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center">
             <div class="container mx-auto px-4">
@@ -111,9 +111,6 @@
                 <button class=" bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded mt-4">Book Now >></button>
 
             </div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 flex  pb-8">
-            <img src="images/Waves café.png" alt="Waves Café" class="h-[50px] md:h-[70px]">
         </div>
     </section>
 
@@ -128,7 +125,7 @@
         <main class="container mx-auto flex flex-col-reverse gap-5 lg:flex-row ">
             <div class="flex flex-col lg:w-[40%] gap-5">
                 <img src="images/home-coffe.png" alt="Image 1" data-large="images/img-1-large.png"
-                    class="image h-auto object-cover rounded-lg cursor-pointer">
+                    class="image h-auto object-cover rounded-lg cursor-pointer hover:scale-105">
             </div>
 
             <div class="flex flex-col lg:w-[50%] justify-center text-white lg:ms-5">
@@ -136,7 +133,7 @@
                     <span class="text-[#5F9BCE] text-[32px] lg:text-[45px]">Choose Your</span> Favorites <br> Coffee
                 </h2>
                 <img src="./images/line-img.png" alt="img" class="mt-3 w-[180px]">
-                <p class="text-gray-400 text-sm mt-4 font-sans mb-4">
+                <p class="text-gray-400 text-sm mt-4 font-sans mb-4" id="load-more">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare, augue sed fringilla bt
                     congue, diam estbr
                     ullamcorper libero, eget faucibus magna diam quis metus. Maecenas eu dui rhoncus, placerat est sit
@@ -171,6 +168,90 @@
 
     <!-- CHOOSE FOOD HOME SECTION END  -->
 
+    <!-- SIGNATURE MENU SECTION START  -->
+
+    <section class="px-4 py-12 relative" id="menu">
+        <div class="container mx-auto py-12">
+            <img src="images/rounded-right.png" alt="Right Image"
+                class="absolute right-0  h-auto hidden lg:block  w-[300px] ">
+            <div class="flex flex-col md:flex-row justify-between items-center text-left mb-8">
+                <div class="md:w-1/2 order-1 md:order-2 mt-6 md:mt-0 text-right">
+                    <h1 class="text-4xl md:text-5xl font-bold text-blue-400">Let’s Talk About Our</h1>
+                    <h2 class="text-3xl md:text-4xl font-extrabold mt-2 text-white">Signature Menu</h2>
+                    <div class="flex justify-end items-end mt-3">
+                        <img src="images/line-img.png" alt="line" class="w-40">
+                    </div>
+                    <div class="flex justify-center items-center mt-4">
+                        <img src="images/star.png" alt="Star" class="mt-4 md:mt-0">
+                    </div>
+                </div>
+
+                <!-- Left Section: Text and Button -->
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <p class="text-gray-400 font-sans  max-w-lg leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare, augue sed fringilla
+                        congue, diam est ullamcorper libero, eget faucibus magna diam quis metus.
+                    </p>
+                    <button id="bookNow"
+                        class="mt-6 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 border border-[#5F9BCE] focus:ring-2 focus:ring-blue-500"
+                        style="background-color: rgb(29, 27, 27);">
+                        Book Now <span class="ml-2">&raquo;</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Image Grid Section -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="rounded-3xl overflow-hidden relative">
+                    <img src="images/home-sing1.png" alt="Pizza"
+                        class="hover:scale-105 transition-transform duration-300 w-full h-auto object-cover " />
+                </div>
+
+                <div class="rounded-3xl overflow-hidden relative top-[15%]">
+                    <img src="images/home-sing2.png" alt="Egg Salad"
+                        class="hover:scale-105 transition-transform duration-300 w-full h-auto object-cover " />
+                </div>
+                <div class="rounded-3xl overflow-hidden relative top-[22%]">
+                    <img src="images/home-sing3.png" alt="Dish"
+                        class="hover:scale-105 transition-transform duration-300 w-full h-auto object-cover " />
+                </div>
+            </div>
+            <img src="images/left-side.png" alt="Left Image"
+                class="absolute left-0 bottom-20 w-[330px] h-auto lg:block hidden" />
+        </div>
+    </section>
+
+    <!-- SIGNATURE MENU SECTION END  -->
+
+    <!-- PERSANTAGE SECTION START  -->
+
+    <section class="flex items-center justify-center py-12 relative" id="persontage">
+        <div class="relative w-full">
+            <img src="images/persentage-sec.png" alt="Main Image" data-large="images/img-5-large.png" class="image w-full object-cover opacity-70 cursor-pointer lg:h-[600px] h-[400px]">
+      
+            <!-- Overlay -->
+            <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center" style="background-image: url('./images/overlay.png'); background-size: cover;">
+                <div class="text-center px-4 md:px-6 lg:px-8">
+                    <h1 class="text-white text-4xl"><img src="images/per-text.png" alt=""></h1>
+                    <div class="flex justify-center items-center mb-5 mt-5">
+                        <img src="images/line-img.png" alt="line" class="w-40 md:w-48 lg:w-60">
+                    </div>
+                    <button class="bg-[#5F9BCE] text-white px-4 py-2 rounded mt-4 md:px-6 lg:px-8">Book Now &raquo;</button>
+                </div>
+            </div>
+        </div>
+      
+        <img src="images/rounded1.png" alt="rounded"
+                class="absolute left-0 bottom-[-14.5rem] w-[330px] h-auto " />>
+    </section>
+    
+    <!-- PERSANTAGE SECTION END  -->
+
+    <!-- FEATCHURE SPICAL SECTION START  -->
+
+
+
+    <!-- FEATCHURE SPICAL SECTION END  -->
 
 
     <!-- FOOTER SECTION START  -->
@@ -218,9 +299,8 @@
             class="absolute top-1/2 right-0 transform -translate-y-1/2 w-[100px] h-auto ">
     </footer>
 
-
-
     <!-- FOOTER SECTION END  -->
+
 
     <!-- J-QUERY LOGIC ADDD AND CUSTOM JAVASCRIPT LINK -->
 
@@ -245,6 +325,19 @@
             });
         });
 
+        $(document).ready(function () {
+            $("#bookNow").hover(
+                function () {
+                    $(this).addClass("bg-blue-700").removeClass("bg-primary");
+                },
+                function () {
+                    $(this).removeClass("bg-blue-700").addClass("bg-primary");
+                }
+            );
+            $("#bookNow").on("click", function () {
+                alert("Redirecting to the booking page...");
+            });
+        });
     </script>
 </body>
 

@@ -337,32 +337,34 @@
 
     <section class=" flex items-center justify-center py-12">
         <div class=" container mx-auto px-6 py-8 text-white ">
-    
-          <div class=" flex items-center justify-center ">
-            <div class="max-w-2xl w-full px-6 py-8 text-white ">
-              <h2 class="text-3xl font-bold text-center mb-4">
-                <span class="text-[#5F9BCE]">Most Popular</span> 
-              </h2>
-              <div class="flex justify-center items-center mb-5">
-                <img src="images/line-img.png" alt="line" class="w-32">
-              </div>
-              <p class="text-sm font-sans text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-             
-            </div>
-        </div>
-        <div class="relative w-full h-full">
-            <img src="images/popular.png" alt="Main Image" data-large="images/img-5-large.png" class="image w-full object-cover cursor-pointer">
-            <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-                <div class="text-center">
-                    <p class="text-white mt-4">
-                        <img src="images/Vanilla latte.png" alt="Overlay Text">
-                    </p>
+
+            <div class=" flex items-center justify-center ">
+                <div class="max-w-2xl w-full px-6 py-8 text-white ">
+                    <h2 class="text-3xl font-bold text-center mb-4">
+                        <span class="text-[#5F9BCE]">Most Popular</span>
+                    </h2>
+                    <div class="flex justify-center items-center mb-5">
+                        <img src="images/line-img.png" alt="line" class="w-32">
+                    </div>
+                    <p class="text-sm font-sans text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.</p>
+
                 </div>
             </div>
+            <div class="relative w-full h-full">
+                <img src="images/popular.png" alt="Main Image" data-large="images/img-5-large.png"
+                    class="image w-full object-cover cursor-pointer">
+                <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+                    <div class="text-center">
+                        <p class="text-white mt-4">
+                            <img src="images/Vanilla latte.png" alt="Overlay Text">
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        
-        </div>
-      </section>
+    </section>
 
     <!-- Popular food section end -->
 
@@ -455,13 +457,13 @@
             $('#load-more').on('click', function () {
                 newPosts.forEach((post) => {
                     const newPostHtml = `
-        <div class="flex items-center space-x-4 mb-4 p-2">
-          <img src="${post.image}" alt="${post.description}" class="w-16 h-16 rounded-lg">
-          <div>
-            <p class="text-sm text-gray-400">${post.date}</p>
-            <p class="text-white font-sans">${post.description}</p>
-          </div>
-        </div>`;
+                        <div class="flex items-center space-x-4 mb-4 p-2">
+                        <img src="${post.image}" alt="${post.description}" class="w-16 h-16 rounded-lg">
+                        <div>
+                            <p class="text-sm text-gray-400">${post.date}</p>
+                            <p class="text-white font-sans">${post.description}</p>
+                        </div>
+                        </div>`;
                     $('#recent-posts').append(newPostHtml);
                 });
             });
