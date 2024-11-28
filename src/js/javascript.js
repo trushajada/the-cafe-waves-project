@@ -99,5 +99,3 @@ document.getElementById("viewMore").addEventListener("click", () => {
       </div>`;
     document.getElementById("gallery").innerHTML += newImages;
 });
-
-
