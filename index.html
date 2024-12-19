@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="src/css/tailwindcss.css">
+    <link rel="stylesheet" href="./Assets/css/tailwindcss.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
 <body>
 
     <!-- HEADER & BANNEER  SECTION-->
-    <header id="main-header" class="py-4 shadow-md fixed top-0 left-0 w-full z-10 ">
+    <header id="main-header" class="py-4 shadow-md fixed top-0 left-0 w-full z-10 border-bottom">
         <div class="container mx-auto flex justify-between items-center px-4">
             <h1 class="text-3xl font-bold text-[#5F9BCE]">The Waves Cafe</h1>
 
@@ -36,23 +37,21 @@
                 &#9776;
             </button>
             <nav class="hidden lg:flex space-x-6 text-gray-300 relative">
-                <ul class="flex space-x-8"> 
+                <ul class="flex space-x-8">
                     <li><a href="index.html" class="text-blue-400 border-blue-400 border-b-2">Home</a></li>
                     <li><a href="About.html" class="text-white">About Us</a></li>
                     <div class="dropdown inline-block relative">
-                        <button class=" flex">
-                            <span class="mr-3">blog</span>
+                        <button class="flex">
+                            <span class="mr-3">Blog</span>
                             <svg class="fill-current h-4 w-4 mt-1" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20">
                                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                             </svg>
                         </button>
                         <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 w-32">
-                            <li class=""><a
-                                    class="rounded-t bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white"
+                            <li><a class="rounded-t bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white"
                                     href="Blog.html">Blog 1</a></li>
-                            <li class=""><a
-                                    class="bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white"
+                            <li><a class="bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white"
                                     href="Blog2.html">Blog 2</a></li>
                         </ul>
                     </div>
@@ -60,44 +59,77 @@
                     <li><a href="ContactUs.html" class="">Contact Us</a></li>
                 </ul>
             </nav>
-            <button 
-            class="hidden lg:block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded" 
-            onclick="window.location.href='ContactUs.html';">
-            Book Now
-        </button>
-                </div>
-        <img src="images/Line 2.png" alt="" class="mt-3">
+            <button
+                class="hidden lg:block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-all duration-300 ease-in-out hover:ring-4 hover:ring-blue-300"
+                onclick="window.location.href='ContactUs.html';">
+                Book Now <i class="fa-solid fa-angles-right"></i>
+            </button>
+
+
+        </div>
     </header>
 
     <!-- Mobile Navigation Menu -->
-    <div id="mobile-menu"
-        class="lg:hidden fixed inset-0 bg-black bg-opacity-50 hidden flex justify-center items-center z-20">
-        <div class="bg-white w-4/5 p-6 rounded-lg">
-            <ul class="space-y-4">
-                <li class="text-blue-400 hover:border-blue-400"><a href="index.html">Home</a></li>
-                <li><a href="About.html">About Us</a></li>
-                <div class="dropdown inline-block relative">
-                    <button class=" flex">
-                        <span class="mr-3">blog</span>
-                        <svg class="fill-current h-4 w-4 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                        </svg>
-                    </button>
-                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 w-32">
-                        <li class=""><a
-                                class="rounded-t bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white"
-                                href="Blog.html">Blog 1</a></li>
-                        <li class=""><a
-                                class="bg-gray-200 hover:bg-[#5F9BCE] py-2 px-4 block whitespace-no-wrap hover:text-white"
-                                href="Blog2.html">Blog 2</a></li>
-                    </ul>
-                </div>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="ContactUs.html">Contact Us</a></li>
-                <li><button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Book Now</button></li>
+    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-[#1D1B1B] flex justify-center items-center z-50">
+        <div class="w-full h-full flex flex-col justify-center items-center text-center text-white relative">
+            <!-- Close Button -->
+            <button id="close-menu" class="absolute top-6 right-6 text-white text-4xl">
+                &times;
+            </button>
+            <!-- Logo -->
+            <h2 class="text-blue-400 font-bold text-2xl mb-12">
+                The Waves Cafe
+            </h2>
+            <!-- Menu Links -->
+            <ul class="space-y-8 text-xl">
+                <li>
+                    <a href="index.html" class="hover:text-blue-400 font-semibold">Home</a>
+                </li>
+                <li>
+                    <a href="About.html" class="hover:text-blue-400">About Us</a>
+                </li>
+                <li>
+                    <div class="relative group">
+                        <!-- Main Menu Item -->
+                        <button
+                            class="flex items-center text-gray-800 font-medium px-4 py-2 text-white focus:outline-none"
+                            aria-haspopup="true" aria-expanded="false">
+                            Blog
+                            <svg class="fill-current h-4 w-4 mt-1" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <ul
+                            class="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 transition duration-200 ease-in-out z-10">
+                            <li>
+                                <a href="Blog.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-500">
+                                    Blog 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Blog2.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-500">
+                                    Blog 2
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="Gallery.html" class="hover:text-blue-400">Gallery</a>
+                </li>
+                <li>
+                    <a href="ContactUs.html" class="hover:text-blue-400">Contact Us</a>
+                </li>
             </ul>
         </div>
     </div>
+
+
 
     <!-- Banner Section with Title inside Container -->
     <section id="home" class="relative bg-cover bg-center h-[100vh] sm:h-[100vh] md:h-[100vh] lg:h-[100vh] pt-20  mb-5"
@@ -111,9 +143,18 @@
                     Voluptates maxime voluptatem cupiditate, <br>accusamus pariatur quisquam optio enim exercitationem
                 </p>
 
-                <button class=" bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded mt-4">Book Now >></button>
-
+                <a href="./ContactUs.html">
+                    <button
+                        class="lg:block mt-8 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-all duration-300 ease-in-out hover:ring-4 hover:ring-blue-300"
+                        onclick="window.location.href='ContactUs.html';">
+                        Book Now <i class="fa-solid fa-angles-right"></i>
+                    </button>
+                </a>
             </div>
+
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 flex  pb-8">
+            <img src="images/Waves café.png" alt="Waves Café" class="h-[50px] md:h-[70px]">
         </div>
     </section>
 
@@ -157,12 +198,13 @@
                     </label>
                 </div>
 
-                <div class="mt-8 ">
+                <div class="mt-8">
                     <button id="load-more"
-                        class="px-6 py-2 bg-blue-500 rounded-lg text-white text-sm hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 border border-[#5F9BCE]"
-                        style="background-color: rgb(29, 27, 27);">
-                        Read More >></button>
+                        class="px-6 py-2 bg-transparent rounded-lg text-white text-sm hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 border border-[#5F9BCE]">
+                        Read More <i class="fa-solid fa-angles-right"></i>
+                    </button>
                 </div>
+
             </div>
         </main>
         <img src="images/rounded1.png" alt="Left Image" class="absolute left-0 bottom-20 w-[330px] h-auto  " />
@@ -195,11 +237,13 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare, augue sed fringilla
                         congue, diam est ullamcorper libero, eget faucibus magna diam quis metus.
                     </p>
-                    <button id="bookNow"
-                        class="mt-6 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 border border-[#5F9BCE] focus:ring-2 focus:ring-blue-500"
-                        style="background-color: rgb(29, 27, 27);">
-                        Book Now
-                    </button>
+                    <div class="mt-6">
+                        <a href="./ContactUs.html"
+                            class="px-6 py-2 bg-transparent rounded-lg text-white text-sm hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 border border-[#5F9BCE] inline-flex items-center">
+                            Book Now <i class="fa-solid fa-angles-right ml-2"></i>
+                        </a>
+                    </div>
+
                 </div>
             </div>
 
@@ -241,8 +285,10 @@
                     <div class="flex justify-center items-center mb-5 mt-5">
                         <img src="images/line-img.png" alt="line" class="w-40 md:w-48 lg:w-60">
                     </div>
-                    <button class="bg-[#5F9BCE] text-white px-4 py-2 rounded mt-4 md:px-6 lg:px-8 hover:bg-blue-500">Book Now
-                        &raquo;</button>
+                    <button
+                        class="bg-[#5F9BCE] text-white px-4 py-2 rounded mt-4 md:px-6 lg:px-8 hover:bg-blue-500">Book
+                        Now <i class="fa-solid fa-angles-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -252,67 +298,77 @@
 
     <!-- PERSANTAGE SECTION END  -->
 
-    <!-- FEATCHURE SPICAL SECTION START  -->
-
-
+    <!-- FEATURE SPECIAL SECTION START  -->
 
     <section class="py-12 px-4 relative">
-        <img src="images/right-side.png" alt="Left Image"
+        <!-- Image placements -->
+        <img src="images/right-side.png" alt="Right Image"
             class="absolute right-0 bottom-0 h-[440px] hidden lg:block w-[300px] z-10">
-        <img src="images/rounded-right.png" alt="Right Image" class="absolute right-0 bottom-0 h-auto  w-[300px] z-10">
+        <img src="images/rounded-right.png" alt="Rounded Image" class="absolute right-0 bottom-0 h-auto w-[300px] z-10">
 
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-[#5F9BCE] mb-2">Our Special<span class="text-white"> Features</span></h2>
             <div class="flex justify-center items-center mb-5">
-                <img src="images/line-img.png" alt="line" class="w-32">
+                <img src="images/line-img.png" alt="Line" class="w-32">
             </div>
             <p class="text-gray-400 max-w-xl mx-auto font-sans text-sm">
                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Quisque Nulla Arcu, Suscipit.
             </p>
 
+            <!-- Feature Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-                <div class="relative rounded-xl border border-1 p-6 hover:shadow-lg hover:shadow-primary transition duration-300 hover:scale-105">
-                    <img src="images/Vector 1.png" alt="" class="absolute bottom-0 right-0  w-30">
-                q    <img src="images/h-1.png" alt="" class=" mb-3 w-10">
+                <!-- Best Places -->
+                <div
+                    class="relative rounded-xl p-6 hover:shadow-lg hover:shadow-primary transition duration-300 hover:scale-105">
+                    <img src="images/Vector 1.png" alt="" class="absolute bottom-0 right-0 w-30">
+                    <img src="images/h-1.png" alt="" class="mb-3 w-10">
                     <h3 class="text-xl font-bold mb-2 text-left text-white">Best Places</h3>
                     <p class="text-gray-400 text-left font-sans text-sm">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel dictum magna. Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Velit voluptatem inventore harum veritatis obcaecati illo laudantium autem vel
-                      ipsa fugiat, corrupti veniam, vitae labore enim aspernatur consectetur? Officia, ullam ipsa?
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel dictum magna. Lorem ipsum
+                        dolor sit amet,
+                        consectetur adipiscing elit. Velit voluptatem inventore harum veritatis obcaecati illo
+                        laudantium autem vel
+                        ipsa fugiat, corrupti veniam, vitae labore enim aspernatur consectetur? Officia, ullam ipsa?
                     </p>
-                  </div>
-                  
-                <div
-                    class="relative rounded-xl border-1 border p-6 hover:shadow-lg hover:shadow-primary transition duration-300 hover:scale-105 text-[#5F9BCE] text-left">
-                    <img src="images/Vector 2.png" alt="" class="absolute bottom-0 right-0  w-30">
+                </div>
 
+                <!-- Best Quality -->
+                <div
+                    class="relative rounded-xl p-6 hover:shadow-lg hover:shadow-primary transition duration-300 hover:scale-105 text-[#5F9BCE] text-left">
+                    <img src="images/Vector 2.png" alt="" class="absolute bottom-0 right-0 w-30">
                     <img src="images/h-2.png" alt="" class="mb-3 w-10">
                     <h3 class="text-xl font-bold mb-2">Best Quality</h3>
                     <p class="font-sans text-sm">
                         Aenean commodo justo et urna consequat, non scelerisque libero ullamcorper. Lorem ipsum dolor
-                        sit amet, consectetur adipisicing elit. Repellendus, blanditiis suscipit harum perspiciatis
-                        consectetur modi culpa aperiam error vero ipsam deserunt! Culpa suscipit dolorum deserunt?
-                        Voluptates non quaerat sint quae.
+                        sit amet,
+                        consectetur adipisicing elit. Repellendus, blanditiis suscipit harum perspiciatis consectetur
+                        modi culpa
+                        aperiam error vero ipsam deserunt! Culpa suscipit dolorum deserunt? Voluptates non quaerat sint
+                        quae.
                     </p>
                 </div>
 
-                <div class="relative rounded-xl border border-1 p-6 hover:shadow-lg hover:shadow-primary transition duration-300 hover:scale-105">
-                    <img src="images/Vector 1.png" alt="" class="absolute bottom-0 right-0  w-30">
-
+                <!-- Best Services -->
+                <div
+                    class="relative rounded-xl p-6 hover:shadow-lg hover:shadow-primary transition duration-300 hover:scale-105">
+                    <img src="images/Vector 1.png" alt="" class="absolute bottom-0 right-0 w-30">
                     <img src="images/h-3.png" alt="" class="mb-3 w-10">
                     <h3 class="text-xl font-bold mb-2 text-white">Best Services</h3>
                     <p class="text-gray-400 font-sans text-sm">
-                        Integer facilisis libero ac neque malesuada, non suscipit metus aliquet. Lorem ipsum dolor sit,
-                        amet consectetur adipisicing elit. Deleniti officia ut necessitatibus dolorum, inventore
-                        doloribus illum nobis mollitia magnam alias soluta exercitationem qui quia voluptate neque,
-                        facere quos perferendis maiores.
+                        Integer facilisis libero ac neque malesuada, non suscipit metus aliquet. Lorem ipsum dolor sit
+                        amet,
+                        consectetur adipisicing elit. Deleniti officia ut necessitatibus dolorum, inventore doloribus
+                        illum nobis
+                        mollitia magnam alias soluta exercitationem qui quia voluptate neque, facere quos perferendis
+                        maiores.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FEATCHURE SPICAL SECTION END  -->
+    <!-- FEATURE SPECIAL SECTION END  -->
+
 
     <!-- RESERVATON SECTION START  -->
 
@@ -334,20 +390,20 @@
             </div>
             <div class="flex justify-center items-center">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 w-[50%]">
-                <div>
-                    <ul id="hours-list" class=" space-y-1 text-light ">
-                        <!-- Dynamic opening hours content will go here -->
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-left font-bold">Reservation Number</h3>
-                    <ul id="reservation-list" class=" space-y-1 text-light">
-                        <!-- Dynamic reservation numbers content will go here -->
-                    </ul>
+                    <div>
+                        <ul id="hours-list" class=" space-y-1 text-light ">
+                            <!-- Dynamic opening hours content will go here -->
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-left font-bold">Reservation Number</h3>
+                        <ul id="reservation-list" class=" space-y-1 text-light">
+                            <!-- Dynamic reservation numbers content will go here -->
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <img src="images/rounded1.png" alt="rounded" class="absolute left-0 bottom-[-14.5rem] w-[300px]  " />
+            <img src="images/rounded1.png" alt="rounded" class="absolute left-0 bottom-[-14.5rem] w-[300px]  " />
     </section>
     <!-- RESERVATON SECTION END  -->
 
@@ -425,7 +481,7 @@
                 <button id="load-more"
                     class="px-6 py-2 bg-blue-500 rounded-lg text-white hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 border border-[#5F9BCE]"
                     style="background-color: rgb(29, 27, 27);">
-                    Loren More .....</button>
+                    Read More <i class="fa-solid fa-angles-right"></i></button>
             </div>
             <img src="images/left-side.png" alt="Left Image"
                 class="absolute left-0 bottom-40 w-[200px] h-auto lg:block  lg:block hidden" />
@@ -457,29 +513,35 @@
             <div class="flex flex-col lg:flex-row gap-5 w-full px-5 mx-auto justify-center items-center">
                 <!-- First Column -->
                 <div class="flex flex-col gap-5">
-                    <img src="images/g-1.png" alt="Image 1" data-large="images/g-1.png" class="image object-cover rounded-lg cursor-pointer h-auto">
-                    <img src="images/g-4.png" alt="Image 2" data-large="images/g-4.png" class="image object-cover rounded-lg cursor-pointer h-auto">
+                    <img src="images/g-1.png" alt="Image 1" data-large="images/g-1.png"
+                        class="image object-cover rounded-lg cursor-pointer h-auto">
+                    <img src="images/g-4.png" alt="Image 2" data-large="images/g-4.png"
+                        class="image object-cover rounded-lg cursor-pointer h-auto">
                 </div>
-            
+
                 <!-- Second Column -->
                 <div class="flex flex-col lg:flex-row gap-5">
                     <div class="flex flex-col gap-5">
-                        <img src="images/g-2.png" alt="Smaller Image 1" data-large="images/g-2-large.png" class="image h-auto object-cover rounded-lg cursor-pointer">
-                        <img src="images/g-3.png" alt="Smaller Image 2" data-large="images/g-3-large.png" class="image h-auto object-cover rounded-lg cursor-pointer">
+                        <img src="images/g-2.png" alt="Smaller Image 1" data-large="images/g-2-large.png"
+                            class="image h-auto object-cover rounded-lg cursor-pointer">
+                        <img src="images/g-3.png" alt="Smaller Image 2" data-large="images/g-3-large.png"
+                            class="image h-auto object-cover rounded-lg cursor-pointer">
                     </div>
                 </div>
-            
+
                 <!-- Third Column -->
                 <div class="flex flex-col gap-5">
-                    <img src="images/g-5.png" alt="Smaller Image 3" data-large="images/g-5-large.png" class="image h-auto object-cover rounded-lg cursor-pointer">
-                    <img src="images/g-6.png" alt="Smaller Image 4" data-large="images/g-6-large.png" class="image h-auto object-cover rounded-lg cursor-pointer">
+                    <img src="images/g-5.png" alt="Smaller Image 3" data-large="images/g-5-large.png"
+                        class="image h-auto object-cover rounded-lg cursor-pointer">
+                    <img src="images/g-6.png" alt="Smaller Image 4" data-large="images/g-6-large.png"
+                        class="image h-auto object-cover rounded-lg cursor-pointer">
                 </div>
             </div>
-            
+
             <!-- View More Button -->
             <div class="text-center mt-8">
                 <button id="viewMore" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition">
-                    View More ➞
+                    View More <i class="fa-solid fa-angles-right"></i>
                 </button>
             </div>
         </div>
@@ -498,68 +560,74 @@
         <img src="images/rounded-right.png" alt="Right Image" class="absolute left-0 bottom-0 h-auto  w-[300px] z-10">
 
         <div class="container mx-auto text-white">
-          <div 
-            class="bg-cover bg-center h-auto lg:h-[500px] flex flex-wrap items-center justify-between p-6" 
-            style="background-image: url('./images/ter-1.png');"
-          >
-            <div class="w-full lg:w-1/2 px-6 mb-6 lg:mb-0">
-              <h2 class="text-white text-4xl font-bold mb-4">Testimonials</h2>
-              <img src="images/line-img.png" alt="" class="w-40">
-              <p class="text-white text-lg mb-8 font-sans text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur. Fusce tincidunt purus. Lorem ipsum dolor sit amet consectetur.
-              </p>
-            </div>
-      
-            <div class="w-full lg:w-1/2 px-6 flex justify-end">
-                <div class="relative">
-                  <div class="slider flex items-center justify-start overflow-hidden">
-                    <div class="slider-wrap flex items-center">
-                      <div class="flex-shrink-0  md:w-1/3 px-4 testimonial-item">
-                        <div class="p-1 bg-white rounded-lg shadow-lg flex flex-col items-center text-center h-auto relative" 
-                             style="background-image: url('./images/ter-2.png'); background-size: cover; background-position: center;">
-                          <img src="images/ter-2.png" alt="Naura's Coffee Shop" class="w-full h-full object-cover opacity-0">
-                          <div class="absolute bottom-0 left-10 right-0 bg-[#5F9BCE] p-1">
-                            <h3 class="text-lg font-semibold mb-2 text-white">Naura</h3>
-                            <p class="text-sm text-white">This coffee shop is very convenient</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="flex-shrink-0  md:w-1/3   lg:w-1/3 px-4 testimonial-item">
-                        <div class="p-1 bg-white rounded-lg shadow-lg flex flex-col items-center text-center h-auto relative" 
-                             style="background-image: url('./images/ter-3.png'); background-size: cover; background-position: center;">
-                          <img src="images/ter-3.png" alt="Naura's Coffee Shop" class="w-full h-full object-cover opacity-0">
-                          <div class="absolute bottom-0 left-10 right-0 bg-[#5F9BCE] p-1">
-                            <h3 class="text-lg font-semibold mb-2 text-white">  Jhon</h3>
-                            <p class="text-sm text-white">This coffee shop is very convenient</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-shrink-0  md:w-1/3 px-4 testimonial-item">
-                        <div class="p-1 bg-white rounded-lg shadow-lg flex flex-col items-center text-center h-auto relative" 
-                             style="background-image: url('./images/ter-4.png'); background-size: cover; background-position: center;">
-                          <img src="images/ter-4.png" alt="Naura's Coffee Shop" class="w-full h-full object-cover opacity-0">
-                          <div class="absolute bottom-0 left-10 right-0 bg-[#5F9BCE] p-1">
-                            <h3 class="text-lg font-semibold mb-2 text-white">Achun</h3>
-                            <p class="text-sm text-white">This coffee shop is very convenient</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Repeat for other items -->
-                    </div>
-                  </div>
-              
-                  <!-- Indicators -->
-                  <div class="flex justify-center mt-4">
-                    <button class="indicator bg-blue-500 h-2 w-2 rounded-full mx-1 cursor-pointer" data-index="0"></button>
-                    <button class="indicator bg-gray-300 h-2 w-2 rounded-full mx-1 cursor-pointer" data-index="1"></button>
-                    <button class="indicator bg-gray-300 h-2 w-2 rounded-full mx-1 cursor-pointer" data-index="2"></button>
-                  </div>
+            <div class="bg-cover bg-center h-auto lg:h-[500px] flex flex-wrap items-center justify-between p-6"
+                style="background-image: url('./images/ter-1.png');">
+                <div class="w-full lg:w-1/2 px-6 mb-6 lg:mb-0">
+                    <h2 class="text-white text-4xl font-bold mb-4">Testimonials</h2>
+                    <img src="images/line-img.png" alt="" class="w-40">
+                    <p class="text-white text-lg mb-8 font-sans text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in
+                        efficitur. Fusce tincidunt purus. Lorem ipsum dolor sit amet consectetur.
+                    </p>
                 </div>
-              </div>
-              
-        </div>
-      </section>
+
+                <div class="w-full lg:w-1/2 px-6 flex justify-end">
+                    <div class="relative">
+                        <div class="slider flex items-center justify-start overflow-hidden">
+                            <div class="slider-wrap flex items-center">
+                                <div class="flex-shrink-0  md:w-1/3 px-4 testimonial-item">
+                                    <div class="p-1 bg-white rounded-lg shadow-lg flex flex-col items-center text-center h-auto relative"
+                                        style="background-image: url('./images/ter-2.png'); background-size: cover; background-position: center;">
+                                        <img src="images/ter-2.png" alt="Naura's Coffee Shop"
+                                            class="w-full h-full object-cover opacity-0">
+                                        <div class="absolute bottom-0 left-10 right-0 bg-[#5F9BCE] p-1">
+                                            <h3 class="text-lg font-semibold mb-2 text-white">Naura</h3>
+                                            <p class="text-sm text-white">This coffee shop is very convenient</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-shrink-0  md:w-1/3   lg:w-1/3 px-4 testimonial-item">
+                                    <div class="p-1 bg-white rounded-lg shadow-lg flex flex-col items-center text-center h-auto relative"
+                                        style="background-image: url('./images/ter-3.png'); background-size: cover; background-position: center;">
+                                        <img src="images/ter-3.png" alt="Naura's Coffee Shop"
+                                            class="w-full h-full object-cover opacity-0">
+                                        <div class="absolute bottom-0 left-10 right-0 bg-[#5F9BCE] p-1">
+                                            <h3 class="text-lg font-semibold mb-2 text-white"> Jhon</h3>
+                                            <p class="text-sm text-white">This coffee shop is very convenient</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-shrink-0  md:w-1/3 px-4 testimonial-item">
+                                    <div class="p-1 bg-white rounded-lg shadow-lg flex flex-col items-center text-center h-auto relative"
+                                        style="background-image: url('./images/ter-4.png'); background-size: cover; background-position: center;">
+                                        <img src="images/ter-4.png" alt="Naura's Coffee Shop"
+                                            class="w-full h-full object-cover opacity-0">
+                                        <div class="absolute bottom-0 left-10 right-0 bg-[#5F9BCE] p-1">
+                                            <h3 class="text-lg font-semibold mb-2 text-white">Achun</h3>
+                                            <p class="text-sm text-white">This coffee shop is very convenient</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Repeat for other items -->
+                            </div>
+                        </div>
+
+                        <!-- Indicators -->
+                        <div class="flex justify-center mt-4">
+                            <button class="indicator bg-blue-500 h-2 w-2 rounded-full mx-1 cursor-pointer"
+                                data-index="0"></button>
+                            <button class="indicator bg-gray-300 h-2 w-2 rounded-full mx-1 cursor-pointer"
+                                data-index="1"></button>
+                            <button class="indicator bg-gray-300 h-2 w-2 rounded-full mx-1 cursor-pointer"
+                                data-index="2"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
     <!-- TESTIMENAOLS SECTION END  -->
 
 
@@ -613,26 +681,63 @@
 
     <!-- J-QUERY LOGIC ADDD AND CUSTOM JAVASCRIPT LINK -->
 
-    <script src="src/js/javascript.js"></script>
+    <script src="./Assets/js/javascript.js"></script>
 
     <script>
-        // header 
-        $(document).ready(function () {
-            $('#hamburger').click(function (e) {
-                e.stopPropagation();
-                $('#mobile-menu').toggleClass('hidden');
+        // Header JavaScript script for loading jQuery
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileMenu = document.getElementById("mobile-menu");
+            const hamburger = document.getElementById("hamburger");
+            const closeMenu = document.getElementById("close-menu");
+            const body = document.body;
+
+            // Media query to determine if the viewport is in mobile view
+            const isMobileView = () => window.matchMedia("(max-width: 768px)").matches;
+            mobileMenu.classList.add("hidden");
+
+            // Function to open the mobile menu with animation
+            function openMenu() {
+                if (!isMobileView()) return; // Do not open menu if not in mobile view
+                mobileMenu.classList.remove("hidden");
+                mobileMenu.style.animation = "slideIn 0.5s ease-out forwards"; // Slide in
+                body.classList.add("overflow-hidden"); // Disable background scroll
+            }
+
+            // Function to close the mobile menu with animation
+            function closeMobileMenu() {
+                mobileMenu.style.animation = "slideOut 0.5s ease-in forwards"; // Slide out
+
+                // Hide the menu after the animation is complete (after 0.5s)
+                setTimeout(() => {
+                    mobileMenu.classList.add("hidden"); // Add hidden after animation ends
+                }, 500); // Match the animation duration
+                body.classList.remove("overflow-hidden"); // Enable background scroll
+            }
+
+            // Open menu when the hamburger is clicked
+            hamburger.addEventListener("click", (e) => {
+                e.stopPropagation(); // Prevent event bubbling
+                openMenu();
             });
 
-            $(document).click(function (e) {
-                if (!$(e.target).closest('#mobile-menu, #hamburger').length) {
-                    $('#hamburger').addClass('hidden');
-                }
+            // Close menu when the close button is clicked
+            closeMenu.addEventListener("click", () => {
+                closeMobileMenu();
             });
 
-            $('#mobile-menu a').click(function () {
-                $('#mobile-menu').addClass('hidden');
+            // Close menu if a menu link is clicked
+            mobileMenu.querySelectorAll("a").forEach((link) => {
+                link.addEventListener("click", () => {
+                    closeMobileMenu();
+                });
             });
+
         });
+
+
+
+
+
 
         $(document).ready(function () {
             $("#bookNow").hover(
@@ -692,61 +797,62 @@
         });
 
         $(document).ready(function () {
-  let currentIndex = 0;
+            let currentIndex = 0;
 
-  function updateCarousel(index) {
-    const $carousel = $("#testimonial-carousel");
-    const $indicators = $(".indicator");
-    const slideWidth = $carousel.children().first().outerWidth();
+            function updateCarousel(index) {
+                const $carousel = $("#testimonial-carousel");
+                const $indicators = $(".indicator");
+                const slideWidth = $carousel.children().first().outerWidth();
 
-    $carousel.css("transform", `translateX(-${index * slideWidth}px)`);
+                $carousel.css("transform", `translateX(-${index * slideWidth}px)`);
 
-    $indicators.removeClass("bg-blue-500").addClass("bg-gray-300");
-    $indicators.eq(index).removeClass("bg-gray-300").addClass("bg-blue-500");
-  }
+                $indicators.removeClass("bg-blue-500").addClass("bg-gray-300");
+                $indicators.eq(index).removeClass("bg-gray-300").addClass("bg-blue-500");
+            }
 
-  $(".indicator").on("click", function () {
-    currentIndex = $(this).data("index");
-    updateCarousel(currentIndex);
-  });
+            $(".indicator").on("click", function () {
+                currentIndex = $(this).data("index");
+                updateCarousel(currentIndex);
+            });
 
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % $(".indicator").length;
-    updateCarousel(currentIndex);
-  }, 5000);
-});
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % $(".indicator").length;
+                updateCarousel(currentIndex);
+            }, 5000);
+        });
 
-$(document).ready(function() {
-  const $sliderWrap = $('.slider-wrap');
-  const $indicators = $('.indicator');
-  const totalSlides = $sliderWrap.find('.testimonial-item').length;
-  let currentIndex = 0;
+        $(document).ready(function () {
+            const $sliderWrap = $('.slider-wrap');
+            const $indicators = $('.indicator');
+            const totalSlides = $sliderWrap.find('.testimonial-item').length;
+            let currentIndex = 0;
 
-  function updateSlider() {
-    const slideWidth = $sliderWrap.find('.testimonial-item').outerWidth();
-    $sliderWrap.css('transform', 'translateX(' + (-slideWidth * currentIndex) + 'px)');
-    updateIndicators();
-  }
+            function updateSlider() {
+                const slideWidth = $sliderWrap.find('.testimonial-item').outerWidth();
+                $sliderWrap.css('transform', 'translateX(' + (-slideWidth * currentIndex) + 'px)');
+                updateIndicators();
+            }
 
-  function updateIndicators() {
-    $indicators.removeClass('bg-blue-500').addClass('bg-gray-300');
-    $indicators.eq(currentIndex).removeClass('bg-gray-300').addClass('bg-blue-500');
-  }
+            function updateIndicators() {
+                $indicators.removeClass('bg-blue-500').addClass('bg-gray-300');
+                $indicators.eq(currentIndex).removeClass('bg-gray-300').addClass('bg-blue-500');
+            }
 
-  $indicators.on('click', function() {
-    currentIndex = $(this).data('index');
-    updateSlider();
-  });
+            $indicators.on('click', function () {
+                currentIndex = $(this).data('index');
+                updateSlider();
+            });
 
-  setInterval(function() {
-    currentIndex = (currentIndex + 1) % totalSlides; 
-    updateSlider();
-  }, 3000); 
-  updateSlider();
-});
+            setInterval(function () {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSlider();
+            }, 3000);
+            updateSlider();
+        });
 
 
     </script>
+
 </body>
 
 </html>
